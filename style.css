@@ -1,3 +1,20 @@
 h1, p {
   font-family: Lato;
 }
+
+.ul-style{
+display: flex;
+flex-direction: row;
+}
+
+.li-style{
+  width: 200px;
+  list-style-type: none;
+  border: 1px solid gray;
+  padding: 5px;
+}
+
+.link-style{
+  color: #61dafb;
+  text-decoration: none;
+}

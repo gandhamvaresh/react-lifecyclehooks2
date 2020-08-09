@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 import App from './Components/App';
-import  FetchData  from "./Components/fetchData"
 
 
 
@@ -14,7 +13,7 @@ class Index extends Component {
     return (
       <div>
         <App />
-        <FetchData />
+     
        </div>
     );
   }

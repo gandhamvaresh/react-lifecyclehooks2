@@ -1,7 +1,7 @@
 import React,{useState, useEffect} from 'react';
 
 const initprofile = {followers: null, public_repos: null}
-
+let renderCount = 0;
 function fetchData(){
 const [profile, setProfile] = useState(initprofile);
 
@@ -12,10 +12,12 @@ async function getProfile(){
 }
 
 useEffect(()=>{
+renderCount++;
 getProfile();
 },[])
 
 return <div>{`${profile.followers}   ${profile.public_repos}`}
+<h3> renderCountis : {renderCount} </h3>
  </div> 
 }
 
